@@ -1,0 +1,15 @@
+# Ignore everything:
+*
+
+!.gitignore
+!docs/*
+!docs/
+!docs/edit/
+!docs/edit/*
+!docs/shinylive/*
+!docs/shinylive/pyodide/
+!docs/shinylive/pyodide/*
+!docs/shinylive/pyright/
+!docs/shinylive/pyright/*
+!stocks/
+!stocks/*
