@@ -15,7 +15,7 @@ _LIGHT_FONT = '#ffffff'
 _HIGHLIGHT_COLOR = '#999999'
 _PCT = random.uniform(25,85)
 
-ui.page_opts(title="SOMETHING",
+ui.page_opts(title="Stock Price Forecast",
             fillable=True,
             theme=shinyswatch.theme.darkly()
             )
@@ -104,7 +104,7 @@ with ui.nav_panel("Prediction"):
 
         #PLOTS
         with ui.card(full_screen=True):
-            ui.tags.h1('ANY TITLE')
+            ui.tags.h1('Trend (past 500 days)')
 
             @render.plot
             def plot_1():  

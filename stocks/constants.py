@@ -6,7 +6,10 @@ from pathlib import Path
 def get_dt():
 
     infile = Path(__file__).parent / "stocks.csv"
-    df = pd.read_csv(infile, parse_dates=['date'])
+    df = pd.read_csv(infile)
+    dates = [(datetime.datetime.today().replace(second=0, hour=0, minute=0,microsecond=0) - datetime.timedelta(days=n)) for n in range(len(df))]
+    dates.reverse()
+    df['date'] = dates
 
     max_date = df['date'].max()
     future_steps = 10
