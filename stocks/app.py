@@ -17,8 +17,9 @@ _PCT = random.uniform(25,85)
 
 ui.page_opts(title="Stock Price Forecast",
             fillable=True,
-            theme=shinyswatch.theme.darkly()
+            theme=shinyswatch.theme.superhero
             )
+
 
 #SET DARK MODE PLOTS
 custom_style = {
@@ -33,9 +34,9 @@ custom_style = {
                }
 sns.set_style("darkgrid", rc=custom_style)
 colors = [
+    '#32CD32',  # Lime Green
     '#FF6347',  # Tomato
     '#4682B4',  # Steel Blue
-    '#32CD32',  # Lime Green
     '#FFD700',  # Gold
     '#FF69B4',  # Hot Pink
     '#8A2BE2',  # Blue Violet
