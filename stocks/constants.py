@@ -49,7 +49,7 @@ def gain_loss(future: list[float], total_owned: int, fee:float, pct_flag:bool=Fa
     if max_index == 0:
         msg='Downward trend to be expected, sell now to prevent significant loss.<br>'
         msg+='After sale: <b>${0:.2f}</b> (fee deducted).<br>'.format(current_total_fee_deducted)
-        msg+='Potential amount saved: <b>${}</b> (fee deducted).'.format(current_total_fee_deducted-min_total)
+        msg+='Potential amount saved: <b>${0:2f}</b> (fee deducted).'.format(current_total_fee_deducted-min_total)
 
 
     elif min_index == 0:
